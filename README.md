@@ -1,30 +1,19 @@
 ## Paper: Image Cropping under Design Constraints
 
-## Paper: De-rendering Stylized Texts
 
-<img src = "example/rec0.png" title = "rec" >
-
-Wataru Shimoda<sup>1</sup>, Daichi Haraguchi<sup>2</sup>, Seiichi Uchida<sup>2</sup>, Kota Yamaguchi<sup>1</sup>  
-<sup>1</sup>CyberAgent.Inc, <sup>2</sup> Kyushu University  
-Accepted to ICCV2021.
+Takumi Nishiyasu<sup>1</sup>, Wataru Shimoda<sup>2</sup>,  Yoichi Sato<sup>1</sup>  
+<sup>1</sup>Tokyo University, <sup>2</sup> CyberAgent.Inc
+Accepted to ACMMM Asia 2023.
 [[Publication](https://openaccess.thecvf.com/content/ICCV2021/html/Shimoda_De-Rendering_Stylized_Texts_ICCV_2021_paper.html)]
 [[Arxiv](https://arxiv.org/abs/2110.01890)]
 [[project-page](https://cyberagentailab.github.io/derendering-text/)]
 
 ## Introduction
-This repository contains the codes for ["De-rendering stylized texts"](https://arxiv.org/abs/2110.01890).
+This repository contains the codes for ["Image Cropping under Design Constraints"](https://arxiv.org/abs/2110.01890).
 ### Concept
 We propose to parse rendering parameters of stylized texts utilizing a neural net.
-<img src = "example/concept.jpg" title = "concept" >
+<img src = "example/abstract.png" title = "rec" >
 
-### Demo
-The proposed model parses rendering parameters based on famous 2d graphic engine[[Skia.org](https://skia.org/)|[python implementation](https://github.com/kyamagu/skia-python)], which has compatibility with CSS in the Web.
-We can export the estimated rendering parameters and edit texts by an off-the-shelf rendering engine.
-
-<div align = 'center'>
-<img src = "example/edit0.gif" title = "edit0" height = "220" >
-<img src = "example/edit1.gif" title = "edit1" height = "220" >
-</div>
 
 
 ## Installation
