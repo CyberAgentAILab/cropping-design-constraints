@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ```
 
 ### Evaluation data
-- The evaluation dataset is in [here](/image_cropping_under_design_constraints/data/FLMS_blank_aspect.json) 
+- The evaluation dataset is in [here](/data/FLMS_blank_aspect.json) 
 - Locate the json file in `data/FLMS_blank_aspect.json`
 
 
