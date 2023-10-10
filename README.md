@@ -3,6 +3,7 @@
 
 Takumi Nishiyasu<sup>1</sup>, Wataru Shimoda<sup>2</sup>,  Yoichi Sato<sup>1</sup>  
 <sup>1</sup>Tokyo University, <sup>2</sup> CyberAgent.Inc
+
 Accepted to ACMMM Asia 2023.
 [[Publication](https://openaccess.thecvf.com/content/ICCV2021/html/Shimoda_De-Rendering_Stylized_Texts_ICCV_2021_paper.html)]
 [[Arxiv](https://arxiv.org/abs/2110.01890)]
@@ -27,31 +28,10 @@ We propose to parse rendering parameters of stylized texts utilizing a neural ne
 pip install -r requirements.txt
 ```
 
-### Font data
-- The proposed model is trained with google fonts.
-- ~~Download google fonts and locate in `data/fonts/` as `gfonts`.~~
-	- Note: the organization of font files in the [google fonts](https://github.com/google/fonts.git) is updated from our environment. 
-- Download font files from this link([ofl](https://drive.google.com/file/d/139WdwF7BUKKreELK9jdKXZaYqRQd_pzn/view?usp=sharing)) and locate in `data/fonts/gfonts/`.
+### Evaluation data
+- The evaluation dataset is in [here](/image_cropping_under_design_constraints/data/FLMS_blank_aspect.json) 
+- Locate the json file in `data/FLMS_blank_aspect.json`
 
-```diff
-- cd　data/fonts
-- git clone https://github.com/google/fonts.git gfonts
-+ mkdir data/fonts/gfonts; cd data/fonts/gfonts
-+ tar xvzf ofl.tar.gz
-``` 
-
-### Pre-rendered alpha maps
-- The proposed model parses rendering parameters and refines them through the differentiable rendering model, which uses pre-rendered alpha maps.  
-- Generate pre-rendered alpha maps.
-```bash
-python -m util_lib.gen_pams
-```
-Pre-rendered alpha maps would be generated in `data/fonts/prerendered_alpha`.
-
-<div align = 'center'>
-<img src = "example/sample.jpg" title = "inp" height = "300">
-<img src = "example/opt.gif" title = "opt" height = "300" >
-</div>
 
 
 ## Usage
@@ -69,87 +49,14 @@ Note
 - imgfile option: path of an input image
 - results would be generated in `res/`
 
-### Text image editing
-The proposed model generates a reconstructed image and a pickle file for the parsed rendering parameters.  
-Here, we prepare a notebook file:`text_edit.ipynb` for the guide of the processings to edit text images using the parsed rendering parameters.  
-
-#### Some examples from `text_edit.ipynb`:
-<div align = 'center'>
-<p>Background editing</p>
-<img src = "example/bg_edit.png" title = "inp" height = "200" >
-</div>
-
-<div align = 'center'>
-<p>Text editing</p>
-<img src = "example/text_edit.png" title = "inp" height = "200" >
-</div>
-
-<div align = 'center'>
-<p>Border effect editing</p>
-<img src = "example/border_edit.png" title = "inp" height = "200" >
-</div>
-
-<div align = 'center'>
-<p>Shadow effect editing</p>
-<img src = "example/shadow_edit.png" title = "inp" height = "200" >
-</div>
-
-<div align = 'center'>
-<p>Text offsets editing</p>
-<img src = "example/offset_edit.png" title = "inp" height = "200" >
-</div>
-
-<div align = 'center'>
-<p>Font editing</p>
-<img src = "example/font_edit.png" title = "inp" height = "200" >
-</div>
-
-
-### Data generation
-Quick start.
-```bash
-python gen.py --bgtype=load --bg_dir=src/modules/generator/example/bg --mask_dir=src/modules/generator/example/mask
-```
-The generated text images would be located in `gen_data/`.
-
-For the detail, see [generator](https://github.com/CyberAgentAILab/derendering-text/blob/master/src/modules/generator/README.md).
-
-### Train text parser model
-Quick start.
-Generate training data using simple background dataset.
-```bash
-python gen.py --bgtype=color
-```
-
-Train text parser model with the generated simple background data.
-```bash
-python train.py
-```
-
-For the detail, see [trainer](https://github.com/CyberAgentAILab/derendering-text/blob/master/src/modules/trainer/README.md).
-
-### Attribute details
-
-
 
 ## Todo
-- [x] Testing codes
-- [x] Codes for the text image generator
-- [x] Notebook for text editing
-- [x] Training codes for text paraser model
-- [x] Training codes for inpainting model
-- [ ] Demo app
+- [ ] Link of dataset
+- [ ] Testing codes
 
 ## Reference
 ```bibtex
-@InProceedings{Shimoda_2021_ICCV,
-    author    = {Shimoda, Wataru and Haraguchi, Daichi and Uchida, Seiichi and Yamaguchi, Kota},
-    title     = {De-Rendering Stylized Texts},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2021},
-    pages     = {1076-1085}
-}
+
 ```
 
 ## Contact
