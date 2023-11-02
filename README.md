@@ -5,12 +5,12 @@ Takumi Nishiyasu<sup>1</sup>, Wataru Shimoda<sup>2</sup>,  Yoichi Sato<sup>1</su
 <sup>1</sup>Tokyo University, <sup>2</sup> CyberAgent.Inc
 
 Accepted to ACMMM Asia 2023.
-[[Publication](https://openaccess.thecvf.com/content/ICCV2021/html/Shimoda_De-Rendering_Stylized_Texts_ICCV_2021_paper.html)]
-[[Arxiv](https://arxiv.org/abs/2110.01890)]
-[[project-page](https://cyberagentailab.github.io/derendering-text/)]
+[[Publication](https://arxiv.org/abs/2310.08892)]
+[[Arxiv](https://arxiv.org/abs/2310.08892)]
+[[project-page](https://cyberagentailab.github.io/image_cropping_under_design_constraints/)]
 
 ## Introduction
-This repository contains the codes for ["Image Cropping under Design Constraints"](https://arxiv.org/abs/2110.01890).
+This repository contains the codes for ["Image Cropping under Design Constraints"](https://arxiv.org/abs/2310.08892).
 ### Concept
 We propose to parse rendering parameters of stylized texts utilizing a neural net.
 <img src = "example/abstract.png" title = "rec" >
@@ -60,4 +60,4 @@ Note
 ```
 
 ## Contact
-This repository is maintained by Wataru shimoda(wataru_shimoda[at]cyberagent.co.jp).
+This repository is maintained by Takumi Nishiyasu(nishiyasu-takumi[at]cyberagent.co.jp).
