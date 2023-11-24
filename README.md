@@ -45,10 +45,50 @@ Example usage.
 ```bash
 python test.py --imgfile=example/sample.jpg
 ```
-Note
-- imgfile option: path of an input image
-- results would be generated in `res/`
 
+FLMS_blank_aspect.json
+```
+{
+    "1011366896_Large-0-1_0158730158730158.png": {
+      "image_name": "1011366896_Large.jpg",
+      "aspect_ratio": "1.0158730158730158",
+      "blank_space_index": 0,
+      "blank_space": [
+        0,
+        0,
+        512,
+        384
+      ],
+      "blank_aspect_bbox": [
+        0,
+        0,
+        756,
+        768
+      ]
+    },
+    "1011366896_Large-1-0_750816104461371.png": {...},
+    
+    ...
+
+    "IMG_6266-4-0_6805708013172338.png": {
+      "image_name": "IMG_6266.jpg",
+      "aspect_ratio": "0.6805708013172338",
+      "blank_space_index": 4,
+      "blank_space": [
+        0,
+        170,
+        128,
+        682
+      ],
+      "blank_aspect_bbox": [
+        0,
+        77,
+        911,
+        697
+      ]
+    }
+}
+```
 
 ## Todo
 - [ ] Link of dataset
@@ -60,4 +100,4 @@ Note
 ```
 
 ## Contact
-This repository is maintained by Takumi Nishiyasu(nishiyasu-takumi[at]cyberagent.co.jp).
+This repository is maintained by Takumi Nishiyasu(nishiyasu_takumi[at]cyberagent.co.jp).
