@@ -2,20 +2,15 @@
 layout: default
 ---
 
-## De-rendering Stylized Texts
+## Image Cropping under Design Constraints
 
-![Concept](https://raw.githubusercontent.com/CyberAgentAILab/derendering-text/master/example/concept.jpg)
+![Concept](https://raw.githubusercontent.com/CyberAgentAILab/image_cropping_under_design_constraints/dev-nishiyasu/example/abstract.png)
 
-Wataru Shimoda<sup>1</sup>, Daichi Haraguchi<sup>2</sup>, Seiichi Uchida<sup>2</sup>, Kota Yamaguchi<sup>1</sup>  
-<sup>1</sup>CyberAgent.Inc, <sup>2</sup> Kyushu University  
+Takumi Nishiyasu<sup>1</sup>, Wataru Shimoda<sup>2</sup>, Yoichi Sato<sup>1</sup>  
+<sup>1</sup>The University of Tokyo, <sup>2</sup> CyberAgent.Inc  
 
 ### Abstruct
-Editing raster text is a promising but challenging task. We propose to apply text vectorization for the task of raster text editing in display media, such as posters, web pages, or advertisements. In our approach, instead of applying image transformation or generation in the raster domain, we learn a text vectorization model to parse all the rendering parameters including text, location, size, font, style, effects, and hidden background, then utilize those parameters for reconstruction and any editing task. Our text vectorization takes advantage of differentiable text rendering to accurately reproduce the input raster text in a resolution-free parametric format. We show in the experiments that our approach can successfully parse text, styling, and background information in the unified model, and produces artifact-free text editing compared to a raster baseline.
-
-### Video
-<div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R8PinaLyci0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+Image cropping is essential in image editing for obtaining a compositionally enhanced image. In display media, image cropping is a prospective technique for automatically creating media content. However, image cropping for media contents is often required to satisfy various constraints, such as an aspect ratio and blank regions for placing texts or objects. We call this problem image cropping under design constraints. To achieve image cropping under design constraints, we propose a score function-based approach, which computes scores for cropped results whether aesthetically plausible and satisfies design constraints. We explore two derived approaches, a proposal-based approach, and a heatmap-based approach, and we construct a dataset for evaluating the performance of the proposed approaches on image cropping under design constraints. In experiments, we demonstrate that the proposed approaches outperform a baseline, and we observe that the proposal-based approach is better than the heatmap-based approach under the same computation cost, but the heatmap-based approach leads to better scores by increasing computation cost. The experimental results indicate that balancing aesthetically plausible regions and satisfying design constraints is not a trivial problem and requires sensitive balance, and both proposed approaches are reasonable alternatives.
 
 ### Overview of the proposed model
 ![Concept](https://raw.githubusercontent.com/CyberAgentAILab/derendering-text/master/example/model.png)
