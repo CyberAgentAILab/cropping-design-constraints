@@ -9,7 +9,7 @@ Accepted to ACMMM Asia 2023.
 [[project-page](https://cyberagentailab.github.io/image_cropping_under_design_constraints/)]
 
 
-<img src = "example/abstract.png" title = "rec" >
+<img src = "example/abstract.jpg" title = "rec" >
 
 ## Requirements
 - Python3.9+
@@ -20,7 +20,7 @@ This repository contains evaluation codes for ["Image Cropping under Design Cons
 - Evaluate the performance of the heatmap-based approach (iter_size = 100) by:
 
     ```bash
-    python test.py 
+    python test.py --pred_file predictions.csv 
     ```
 
 
