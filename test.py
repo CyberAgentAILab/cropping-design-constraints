@@ -4,11 +4,6 @@ import numpy as np
 import pandas as pd
 
 def compute_iou(gt_crop, pre_crop):
-    '''
-    :param gt_crop: [[x1,y1,x2,y2]]
-    :param pre_crop: [[x1,y1,x2,y2]]
-    :return:
-    '''
     gt_crop = gt_crop[gt_crop[:,0] >= 0]
     zero_array = np.zeros(gt_crop.shape[0])
     over_x1 = np.maximum(gt_crop[:,0], pre_crop[:,0])
