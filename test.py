@@ -4,11 +4,6 @@ import numpy as np
 import pandas as pd
 
 def compute_iou(gt_crop, pre_crop):
-    '''
-    :param gt_crop: [[x1,y1,x2,y2]]
-    :param pre_crop: [[x1,y1,x2,y2]]
-    :return:
-    '''
     gt_crop = gt_crop[gt_crop[:,0] >= 0]
     zero_array = np.zeros(gt_crop.shape[0])
     over_x1 = np.maximum(gt_crop[:,0], pre_crop[:,0])
@@ -26,11 +21,6 @@ def compute_iou(gt_crop, pre_crop):
     iou_idx = np.argmax(iou)
     return iou[iou_idx]
 
-
-def convert_to_int(box_str):
-    box = ast.literal_eval(box_str)[0]
-    print(box)
-    return [[int(x) for x in box]]
 
 def string_to_ndarray(string_input):
     list_input = eval(string_input)
@@ -63,9 +53,5 @@ if __name__ == "__main__":
                         default="data/predictions.csv",
                         help='predictions of heatmap-based-approach',
                         type=str)
-    parser.add_argument('--gpuid', required=False,
-                        default=0,
-                        help='gpu id',
-                        type=int)
     args = parser.parse_args()
     main(args)
