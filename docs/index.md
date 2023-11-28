@@ -31,5 +31,10 @@ Image cropping is essential in image editing for obtaining a compositionally enh
 ### Citation
 
 ```bibtex
-
+@inproceedings{nishiyasu2023cropping,
+  title={Image Cropping under Design Constraints},
+  author={Takumi, Nishiyasu and Wataru, Shimoda and Yoichi, Sato},
+  booktitle={Proc. ACM International Conference on Multimedia Asia (ACMMMAsia)},
+  year={2023},
+}
 ```
