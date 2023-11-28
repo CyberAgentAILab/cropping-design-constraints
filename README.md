@@ -6,7 +6,7 @@ Takumi Nishiyasu<sup>1</sup>, Wataru Shimoda<sup>2</sup>,  Yoichi Sato<sup>1</su
 Accepted to ACMMM Asia 2023.
 [[Publication](https://arxiv.org/abs/2310.08892)]
 [[Arxiv](https://arxiv.org/abs/2310.08892)]
-[[project-page](https://cyberagentailab.github.io/image_cropping_under_design_constraints/)]
+[[project-page](https://cyberagentailab.github.io/cropping-design-constraints/)]
 
 
 <img src = "example/abstract.jpg" title = "rec" >
