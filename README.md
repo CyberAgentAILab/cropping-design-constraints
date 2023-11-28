@@ -13,6 +13,12 @@ Accepted to ACMMM Asia 2023.
 
 ## Requirements
 - Python3.9+
+- Install the following packages:
+    ```bash
+    pip install numpy pandas 
+    ```
+
+
 
 ## Evaluation
 This repository contains evaluation codes for ["Image Cropping under Design Constraints"](https://arxiv.org/abs/2310.08892).
@@ -109,4 +115,4 @@ If you use this code or find our work is helpful, please consider citing our wor
 ```
 
 ## Contact
-This repository is maintained by Takumi Nishiyasu(nisiyasu[at]iis.u-tokyo.ac.jp).
+If you have any requests or need to get in touch, please feel free to raise issues or send a Pull Request.
