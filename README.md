@@ -26,7 +26,7 @@ This repository contains evaluation codes for ["Image Cropping under Design Cons
 - Evaluate the performance of the heatmap-based approach (iter_size = 100) by:
 
     ```bash
-    python test.py --pred_file predictions.csv 
+    python test.py --pred_file data/predictions.csv 
     ```
 
 
